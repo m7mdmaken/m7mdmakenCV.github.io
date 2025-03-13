@@ -1,0 +1,57 @@
+name: "Mohamed Maken"
+contact:
+  email: "m7mdmaken@gmail.com"
+  phone: "+201096587177"
+  linkedin: "https://linkedin.com/in/m7mdalmaken"
+  github: "https://github.com/m7mdmaken"
+
+summary: >
+  I'm a skilled Flutter developer specializing in cross-platform mobile apps using Dart. 
+  I write clean, scalable code, applying strong problem-solving skills and attention to 
+  detail to deliver high-quality solutions. Passionate about learning and creativity, 
+  I create impactful, maintainable applications that meet real-world needs.
+
+education:
+  - degree: "Bachelor of Engineering"
+    institution: "Mansoura University"
+    major: "Communication and Computer"
+    gpa: 3.08
+    timespan: "2019-2024"
+
+projects:
+  - title: "Personal Weather App"
+    details:
+      - "Developed a cross-platform weather app using Flutter"
+      - "Integrated OpenWeatherMap API for real-time weather data"
+      - "Used Provider for state management & shared preferences for local storage"
+
+  - title: "To-Do List App"
+    details:
+      - "Built a fully functional to-do app with CRUD operations using Flutter"
+      - "Used SQLite for local data persistence"
+      - "Designed a clean UI with custom animations"
+
+certifications:
+  - title: "Mobile Application Development Training"
+    issuer: "Digital Egypt Pioneers Initiative - DEPI"
+    date: "04/2024 - 10/2024"
+    url: "https://drive.google.com/file/d/1hUnGS08wIHvJVi2ru9yAx52zYO3TPfaO/view?usp=sharing"
+    details:
+      - "Technical skills in Kotlin, Java, and Flutter"
+      - "Mobile interface development for various screen sizes"
+      - "App architecture and performance optimization"
+      - "Business English and freelance techniques"
+
+skills:
+  technical:
+    - "Flutter"
+    - "REST API Integration"
+    - "State Management (Provider, BLoC)"
+    - "Firebase"
+    - "Git/GitHub"
+
+  soft:
+    - "Problem-solving"
+    - "Team Collaboration"
+    - "Time Management"
+    - "Attention to Detail"

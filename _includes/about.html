@@ -1,0 +1,79 @@
+<div class="user-details">
+  <h1>{{ site.data.resume.name }}</h1>
+  <p class="position">{{ site.data.resume.contact.email }}</p>
+</div>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:{{ site.data.resume.contact.email }}">{{ site.data.resume.contact.email }}</a></li>
+    <li>Phone: {{ site.data.resume.contact.phone }}</li>
+    <li>LinkedIn: <a href="{{ site.data.resume.contact.linkedin }}" target="_blank">{{ site.data.resume.contact.linkedin }}</a></li>
+    <li>GitHub: <a href="{{ site.data.resume.contact.github }}" target="_blank">{{ site.data.resume.contact.github }}</a></li>
+  </ul>
+</section>
+
+<section class="summary">
+  <h2>Summary</h2>
+  <p>{{ site.data.resume.summary }}</p>
+</section>
+
+<section class="education">
+  <h2>Education</h2>
+  {% for item in site.data.resume.education %}
+  <div class="item">
+    <h3>{{ item.degree }} in {{ item.major }}</h3>
+    <p class="institution">{{ item.institution }}</p>
+    <p class="details">GPA: {{ item.gpa }} | {{ item.timespan }}</p>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="projects">
+  <h2>Projects</h2>
+  {% for project in site.data.resume.projects %}
+  <div class="item">
+    <h3>{{ project.title }}</h3>
+    <ul>
+      {% for detail in project.details %}
+      <li>{{ detail }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="technical">
+    <h3>Technical</h3>
+    <ul>
+      {% for skill in site.data.resume.skills.technical %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="soft">
+    <h3>Professional</h3>
+    <ul>
+      {% for skill in site.data.resume.skills.soft %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="certifications">
+  <h2>Certifications</h2>
+  {% for cert in site.data.resume.certifications %}
+  <div class="item">
+    <h3><a href="{{ cert.url }}" target="_blank">{{ cert.title }}</a></h3>
+    <p class="issuer">{{ cert.issuer }} | {{ cert.date }}</p>
+    <ul>
+      {% for detail in cert.details %}
+      <li>{{ detail }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
